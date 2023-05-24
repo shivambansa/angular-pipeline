@@ -16,7 +16,7 @@ phases:
      commands:
       - echo Build completed on `date`
       - echo "build artifacts will be used for deploy"
-      - cp appspec.yml dist/
+      - cp -r appspec.yml scripts/ dist/
 artifacts:
   files:
       - '**/*'
