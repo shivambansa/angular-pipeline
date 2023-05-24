@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    S3_BUCKET: "arn:aws:s3:::angular-site-first"
+    S3_BUCKET: "angular-site-first"
 phases:
   install:
     runtime-versions:
