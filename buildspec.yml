@@ -14,9 +14,10 @@ phases:
       - ng build --configuration production --aot
   post_build:
      commands:
+      - cp appspec.yml dist/
+      - mkdir -p dist/scripts/
+      - cp -r scripts/* dist/scripts/ 
       - echo Build completed on `date`
-      - echo "build artifacts will be used for deploy"
-      - cp -r appspec.yml scripts/ dist/
 artifacts:
   files:
       - '**/*'
