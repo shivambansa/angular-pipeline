@@ -14,8 +14,7 @@ phases:
       - ng build --configuration production --aot
   post_build:
      commands:
-      - cp appspec.yml dist/
-      - mv scripts/ dist/
+      - mv appspec.yml scripts/ dist/
       - echo Build completed on `date`
 artifacts:
   files:
